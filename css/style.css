@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: raleway, Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {    
+    padding: 40px 30px 30px 30px;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+nav a:visited {
+    color: #000000;
+}
+
+nav a:hover {
+    border-top: 2px #0065fc solid;
+    color: #0065fc;
+}
+
+.logo {
+    margin-top:  30px;
+    margin-bottom: 30px;
+    width: 120px;
+}
+
+h1 + p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+}
+
+h2 {
+    margin-right: 20px;
+}
+
+.redimension {
+    width: 95%;
+    margin: auto
+}
+
+.barre-de-recherche {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.location-icon {
+    height: 75px;
+    background-color: #d9d9d9;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.location-icon i {
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="search"] {
+    padding-right: 0px;
+    height: 75px;
+    margin: 0px;
+    padding: 25px;
+    font-family: raleway;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    height: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
+    background-color:#0065fc;
+    color: white;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.barre-filtre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.bouton-filtre {
+    margin: 20px;
+    border: solid #d9d9d9 1px;
+    border-radius: 50px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+
+}
+
+.bouton-filtre:hover {
+    background-color: #deebff;
+}
+
+a {
+    color: #0065fc
+}
+
+a:visited {
+    color: #0065fc;
+}
+
+.hébergement-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#hébergement {
+    background-color:#d9d9d9;
+    width: 60%;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.hébergement-div {
+    width: 26%;
+    margin-bottom: 30px;
+    height: 230px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+.hébergement-div img {
+    width: 97%;
+    height: 72%;
+    border-radius: 10px 10px 0px 0px;
+    margin: 5px;
+    object-fit: cover;
+}
+.hébergement-div h4, .hébergement-div p {
+    margin-left: 10px;
+}
+
+.hébergement-div h4, .hébergement-div p {
+    font-size: 0.8em;
+}
+
+.hébergement-div p + p{
+    color: #0065fc;
+}
+h3 {
+    padding: 35px;
+}
