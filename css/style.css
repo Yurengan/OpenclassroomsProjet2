@@ -246,10 +246,6 @@ aside {
     margin: 10px;
 }
 
-.populaires-div-text i {
-
-}
-
 .populaires-div-text p {
     margin-top: 5px;
 }
@@ -324,3 +320,75 @@ footer h3 {
     margin-bottom: 5px;
 }
 
+@media screen and (max-width: 1400px) {
+    .flex-section-aside {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hébergement {
+        width: 90%;
+    }
+
+    aside {
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    .populaires-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .populaires-div {
+        height: 150px;
+        width: 30%;
+    }
+
+}
+
+@media (max-width:992px) {
+    .logo {
+        display: none;
+    }
+    .redimension {
+        margin: 0px;
+    }
+
+    main {
+        margin: 30px;
+    }
+    nav {
+        margin: 0px;
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    nav a {
+        width: 50%;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        font-size: 2.5em;
+    }
+    
+    
+    h1 {
+        font-size: 2.5em;
+        margin: center;
+        margin-bottom: 30px;
+    }
+
+    h1, p {
+        width: 95%;
+    }
+
+    h1 + p {
+        margin-bottom: 50px;
+    }
+
+    
+
+}
