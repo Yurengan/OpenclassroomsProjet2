@@ -25,17 +25,25 @@
                         <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
                         <form>
                             <input type="search" name="recherche" placeholder="Marseille, France">
-                            <input type="submit" name="envoyer" value="Rechercher">
+                            <button type="submit" class="rechercher-btn"><p>Rechercher</p><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
                     <div class="barre-filtre">
                         <h2>Filtres</h2>
-                        <a href="#filtre-économique" class="bouton-filtre"><i class="fa-solid fa-money-bill-wave"></i>      Economique</a>
-                        <a href="#filtre-familial" class="bouton-filtre"><i class="fa-solid fa-person"></i>      Familial</a>
-                        <a href="#filtre-romantique" class="bouton-filtre"><i class="fa-solid fa-heart"></i>      Romantique</a>
-                        <a href="#filtre-animaux-autorisés" class="bouton-filtre"><i class="fa-solid fa-dog"></i>      Animaux autorisés</a>
+                        <div class="flex-filtre">    
+                            <div>
+                                <a href="#filtre-économique" class="bouton-filtre"><i class="fa-solid fa-money-bill-wave"></i>Economique</a>
+                                <a href="#filtre-familial" class="bouton-filtre"><i class="fa-solid fa-person"></i>Familial</a>
+                            </div>   
+                            <div>
+                                <a href="#filtre-romantique" class="bouton-filtre"><i class="fa-solid fa-heart"></i>Romantique</a>
+                                <a href="#filtre-animaux-autorisés" class="bouton-filtre"><i class="fa-solid fa-dog"></i>Animaux autorisés</a>
+                            </div>
+                        </div>    
                     </div>
-                    <p><i class="fa-solid fa-circle-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                    <div class="p-info">
+                        <i class="fa-solid fa-circle-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
                     <div class="flex-section-aside">
                         <section id="hébergement">
                             <h3>Hébergements à Marseille</h3>
@@ -130,7 +138,7 @@
                             </div>
                         </aside>
                     </div>
-                    <section class="activités">
+                    <section id="activités">
                         <h3>Activités à Marseille</h3>
                         <div class="activités-flex">
                             <div class="activités-div">
@@ -153,18 +161,18 @@
                     </section>
                 </main>
                 <footer>
-                    <div class="à-propos-div">
+                    <div class="footer-div">
                         <h3>A propos</h3>
                         <a href="#">Fonctionnement du site</a>
                         <a href="#">Conditions générales</a>
                         <a href="#">Données et confidentialité</a>
                     </div>
-                    <div class="à-propos-div">
+                    <div class="footer-div">
                         <h3>Nos hébergements</h3>
                         <a href="#">Charte qualité</a>
                         <a href="#">Proposer votre hôtel</a>
                     </div>
-                    <div class="à-propos-div">
+                    <div class="footer-div">
                         <h3>Assistance</h3>
                         <a href="#">Centre d'aide</a>       
                         <a href="#">Nous contacter</a>         

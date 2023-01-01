@@ -54,7 +54,7 @@ h2 {
 }
 
 .redimension {
-    width: 95%;
+    width: 90%;
     margin: auto
 }
 
@@ -66,13 +66,16 @@ h2 {
 }
 
 .location-icon {
-    height: 75px;
-    background-color: #d9d9d9;
+    height: 60px;
+    background-color: #d9d9d969;
     border-radius: 20px 0px 0px 20px;
+    display: flex;
+    align-items: center;
 }
 
 .location-icon i {
     padding: 30px;
+    font-size: 1.4em;
 }
 
 form {
@@ -82,16 +85,16 @@ form {
 
 input[type="search"] {
     padding-right: 0px;
-    height: 75px;
+    height: 60px;
     margin: 0px;
     padding: 25px;
-    font-family: raleway;
+    font-family: raleway, sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
 
-input[type="submit"] {
-    height: 75px;
+.rechercher-btn {
+    height: 60px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0px;
@@ -99,6 +102,14 @@ input[type="submit"] {
     color: white;
     border: none;
     border-radius: 0px 20px 20px 0px;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+}
+
+.rechercher-btn i {
+    visibility: hidden;
+    width: 0px;
 }
 
 .barre-filtre {
@@ -110,23 +121,47 @@ input[type="submit"] {
 
 .bouton-filtre {
     margin: 20px;
-    border: solid #d9d9d9 1px;
+    border: solid #d9d9d9 2px;
     border-radius: 50px;
     padding: 10px 15px 10px 15px;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.barre-filtre + p i {
+    color: #0065fc;
 }
 
 .bouton-filtre:hover {
     background-color: #deebff;
 }
 
-a {
-    color: #0065fc
+.flex-filtre {
+    display: flex;
+    flex-direction: row;
 }
 
-a:visited {
+.barre-filtre a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.barre-filtre i {
     color: #0065fc;
+    margin-right: 10px;
+}
+
+.p-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.p-info i{
+    color: #0065fc;
+    margin-right: 5px;
 }
 
 .flex-section-aside {
@@ -139,11 +174,11 @@ a:visited {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #hébergement {
-    background-color:#d9d9d9;
+    background-color: #d9d9d969;
     width: 60%;
     border-radius: 15px;
     margin-top: 30px;
@@ -154,36 +189,43 @@ a:visited {
     display: inline-block;
     text-decoration: none;
     color: black;
-    margin-left: 35px;
+    margin-top: 25px;
     font-weight: bold;
 }
 
 .hébergement-div {
-    width: 26%;
+    width: 32%;
     margin-bottom: 30px;
-    height: 230px;
+    height: 280px;
     background-color: white;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.185) ;
 }
 .hébergement-div img {
     width: 97%;
     height: 72%;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 25px 25px 0px 0px;
     margin: 5px;
     object-fit: cover;
     display: flex;
     justify-content: center;
 }
+
 .hébergement-div h4, .hébergement-div p {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .hébergement-div h4, .hébergement-div p {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .hébergement-div i {
+    margin-top: 5px;
     color: #0065fc;
+}
+
+.hébergement-div i + i + i + i + i {
+ color: white;
 }
 
 h3 {
@@ -193,7 +235,7 @@ h3 {
 
 aside {
     width: 30%;
-    background-color: #d9d9d9;
+    background-color: #d9d9d969;
     margin-top: 30px;
     border-radius: 15px;
     padding: 40px;
@@ -217,9 +259,10 @@ aside {
 .populaires-div {
     background-color: white;
     display: flex;
-    border-radius: 10px 10px 10px 10px;
-    margin-top: 25px;
-    height: 20%;
+    border-radius: 25px 25px 25px 25px;
+    margin-bottom: 30px;
+    height: 190px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.185) ;
 }
 
 .populaires-div div {
@@ -230,14 +273,15 @@ aside {
 
 .populaires-img {
    width: 30%;
+
 }
 
 .populaires-div img {
    width: 100%;
-    height: 98%;
+    height: 95%;
     object-fit: cover;
     margin: 5px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 25px 0px 0px 25px;
 }
 
 .populaires-div-text {
@@ -251,19 +295,23 @@ aside {
 }
 
 .populaires-div-text h4, .populaires-div-text p{
-    font-size: 0.8em;
-    width: 70%;
+    font-size: 1em;
+    width: 90%;
+    margin-left: 5px;
 }
 
 .populaires-div-text i {
     color: #0065fc;
 }
 
-.activités {
-    margin: 30px;
-    margin-bottom: 100px;
+.populaires-div-text i + i + i + i + i {
+    color: white;
 }
 
+#activités {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
 
 
 .activités-flex {
@@ -273,7 +321,8 @@ aside {
 }
 
 .activités-div {
-    width: 20%;
+    width: 23%;
+    height: 430px;
 }
 
 .activités-div h5 {
@@ -282,6 +331,8 @@ aside {
     padding-bottom: 10px;
     box-shadow: 0px 5px 5px rgba(0, 0,0, 0.1);
     border-radius: 0px 0px 10px 10px;
+    font-weight: 900;
+    font-size: 1em;
 }
 
 .activités-div img {
@@ -292,46 +343,53 @@ aside {
 }
 
 footer {
-    margin-left: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 95%;
-    background-color: #d9d9d9;
-    border-radius:5px 5px 0px 0px;
+    width: 100%;
+    background-color: #d9d9d969;
+    padding-top: 20px;
 }
 
 footer h3 {
     padding-bottom: 20px;
 }
 
-.à-propos-div {
-    margin-right: 10%;
-    margin-left: 5%;
+.footer-div {
+    width: 30%;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
 }
 
-.à-propos-div a {
+footer div {
+    margin-left: 80px;
+}
+
+.footer-div a {
     text-decoration: none;
     color: black;
-    margin-bottom: 5px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1400px) {
+   
+    .redimension {
+        width: 85%;
+    }
+   
     .flex-section-aside {
         display: flex;
         flex-direction: column;
     }
 
     #hébergement {
-        width: 90%;
+        width: 93%;
     }
 
     aside {
-        width: 90%;
+        width: 93%;
         margin-left: 0px;
     }
 
@@ -346,36 +404,60 @@ footer h3 {
         width: 30%;
     }
 
+    .populaires-img {
+        width: 50%;
+    }
+
+    .activités-div {
+        height: 250px;
+    }
+
 }
 
-@media (max-width:992px) {
-    .logo {
-        display: none;
-    }
+@media (max-width:992px) {   
     .redimension {
         margin: 0px;
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    }
+
+    nav a:hover {
+        border-top: none;
+        border-bottom: 6px #0065fc solid;
+        color: #0065fc;
     }
 
     main {
         margin: 30px;
     }
+
     nav {
         margin: 0px;
-        width: 100%;
-        justify-content: center;
-        
+        width: 100%;       
     }
 
     nav a {
-        width: 50%;
+        width: 100%;
         display: inline-block;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         font-size: 2.5em;
+        border-bottom: 6px #d9d9d969 solid;
     }
     
     
     h1 {
+        margin-top: 60px;
         font-size: 2.5em;
         margin: center;
         margin-bottom: 30px;
@@ -383,12 +465,188 @@ footer h3 {
 
     h1, p {
         width: 95%;
+        text-align: left;
     }
+    
 
     h1 + p {
         margin-bottom: 50px;
     }
 
+    p {
+        font-size: 2em;
+    }
+
+    .barre-de-recherche {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .rechercher-btn p {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    .rechercher-btn i {
+        visibility: visible;
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .location-icon {
+        height: 80px;
+        font-size: 1.5em;
+    }
+
+    input[type="search"] {
+        width: 100%;
+        height: 80px;
+        font-size: 2.5em;
+    }
+
+    .rechercher-btn {
+        height: 80px;
+        font-size: 1.6em;
+    }
+
+    button {
+        height: 80px;
+    }
+
+    .barre-filtre  {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-top: 40px;
+    }
+
+    .bouton-filtre {
+        font-size: 2em;
+        height: 40px;
+    }
+
+    .flex-filtre {
+        display:flex;
+        width: 100%;
+    }
+
+    .flex-filtre div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .p-info {
+        align-items: center;
+    }
+
+    .p-info i {
+        font-size: 2em;
+        margin-right: 20px;
+    }
+
+    .flex-section-aside {
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        width: 100%;
+        border-radius: 0px;
+        margin-left: 0px;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+
+    .align-header-aside i {
+        font-size: 2em;
+    }
+
+    .populaires-flex {
+        flex-direction: column;
+    }
+
+    .populaires-div {
+        width: 100%;
+        height: 250px;
+    }
+
+    .populaires-div-text h4, .populaires-div-text p{
+        font-size: 1.8em;
+    }
+
+    .populaires-img {
+        width: 40%;
+}
+
+    #hébergement {
+        width: 100%;
+        background-color: white;
+
+    }
+
+    .hébergement-flex {
+        flex-direction: column;
+        width: 100%;
+    }
     
+    .hébergement-div {
+        width: 100%;
+        height: 450px;
+        font-size: 1.8em;
+    }
+
+    .hébergement-div img {
+        width: 99%;
+
+    }
+    
+    #hébergement a {
+        display: none;   
+    }
+
+    .activités-flex {
+        flex-direction: column;
+    }
+
+    .activités-div {
+        width: 100%;
+        margin-bottom: 120px;
+        height: 400px;
+    
+    }
+
+    .activités-div img {
+        border-radius: 50px 50px 0px 0px;
+    }
+
+    .activités-div h5 {
+        font-size: 1.8em;
+        border-radius: 0px 0px 50px 50px ;
+        padding: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+
+    .footer-div {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .footer-div a {
+        font-size: 1.5em;
+    }
+
 
 }
