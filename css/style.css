@@ -164,6 +164,11 @@ input[type="search"] {
     margin-right: 5px;
 }
 
+.flex-filtre div {
+    display: flex;
+    flex-direction: row;
+}
+
 .flex-section-aside {
     display: flex;
     flex-direction: row;
@@ -196,14 +201,14 @@ input[type="search"] {
 .hébergement-div {
     width: 32%;
     margin-bottom: 30px;
-    height: 280px;
+    height: 230px;
     background-color: white;
     border-radius: 25px 25px 25px 25px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.185) ;
 }
 .hébergement-div img {
     width: 97%;
-    height: 72%;
+    height: 65%;
     border-radius: 25px 25px 0px 0px;
     margin: 5px;
     object-fit: cover;
@@ -261,7 +266,7 @@ aside {
     display: flex;
     border-radius: 25px 25px 25px 25px;
     margin-bottom: 30px;
-    height: 190px;
+    height: 160px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.185) ;
 }
 
@@ -273,6 +278,7 @@ aside {
 
 .populaires-img {
    width: 30%;
+   min-width: 100px;
 
 }
 
@@ -298,6 +304,10 @@ aside {
     font-size: 1em;
     width: 90%;
     margin-left: 5px;
+}
+
+.populaires-div-text h4 {
+    margin-bottom: 5px;
 }
 
 .populaires-div-text i {
@@ -363,7 +373,7 @@ footer h3 {
 }
 
 footer div {
-    margin-left: 80px;
+    padding-left: 80px;
 }
 
 .footer-div a {
@@ -373,7 +383,7 @@ footer div {
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1400px) {
+@media (min-width: 768px) and (max-width:992px) {
    
     .redimension {
         width: 85%;
@@ -414,7 +424,7 @@ footer div {
 
 }
 
-@media (max-width:992px) {   
+@media (max-width:768px) {   
     .redimension {
         margin: 0px;
         width: 100%;
@@ -525,11 +535,13 @@ footer div {
     h2 {
         font-size: 2em;
         margin-top: 40px;
+        margin-right: 0px;
     }
 
     .bouton-filtre {
         font-size: 2em;
         height: 40px;
+        margin: 10px 2%;
     }
 
     .flex-filtre {
@@ -570,6 +582,10 @@ footer div {
         font-size: 2em;
     }
 
+    aside {
+        width: 90%;
+    }
+
     .populaires-flex {
         flex-direction: column;
     }
@@ -585,10 +601,10 @@ footer div {
 
     .populaires-img {
         width: 40%;
-}
+    }
 
     #hébergement {
-        width: 100%;
+        width: 95%;
         background-color: white;
 
     }
@@ -641,7 +657,7 @@ footer div {
 
     .footer-div {
         margin-bottom: 0px;
-        width: 100%;
+        width: 80%;
     }
 
     .footer-div a {
