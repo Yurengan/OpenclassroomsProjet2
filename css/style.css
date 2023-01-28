@@ -62,7 +62,7 @@ h2 {
 
 .redimension {
     width: 90%;
-    margin: auto
+    margin: auto;
 }
 
 .barre-de-recherche {
@@ -148,7 +148,6 @@ input[type="search"] {
 .flex-filtre {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .bouton-filtre {
@@ -169,12 +168,21 @@ input[type="search"] {
 .p-info {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-.p-info i{
+.icone-info {
     color: #0065fc;
     margin-right: 5px;
+    padding: 10px;
+    border:  solid 1px rgba(128, 128, 128, 0.562);
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    display: flex;
+    align-items: center;
 }
+
 
 .flex-section-aside {
     display: flex;
@@ -208,14 +216,14 @@ input[type="search"] {
 .hébergement-div {
     width: 32%;
     margin-bottom: 30px;
-    height: 230px;
+    height: 50%;
     background-color: white;
     border-radius: 25px 25px 25px 25px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.185) ;
 }
 .hébergement-div img {
     width: 97%;
-    height: 65%;
+    height: 120px;
     border-radius: 25px 25px 0px 0px;
     margin: 5px;
     object-fit: cover;
@@ -231,13 +239,13 @@ input[type="search"] {
     font-size: 1em;
 }
 
-.hébergement-div i {
+.fa-star {
     margin-top: 5px;
     color: #0065fc;
 }
 
-.hébergement-div i + i + i + i + i {
- color: white;
+.star-gray {
+ color: rgba(128, 128, 128, 0.199);
 }
 
 h3 {
@@ -273,7 +281,7 @@ aside {
     display: flex;
     border-radius: 25px 25px 25px 25px;
     margin-bottom: 30px;
-    height: 160px;
+    height: 30%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.185) ;
 }
 
@@ -285,13 +293,12 @@ aside {
 
 .populaires-img {
    width: 30%;
-   min-width: 100px;
-
+    height: 100%;
 }
 
 .populaires-div img {
    width: 100%;
-    height: 95%;
+    height: 180px;
     object-fit: cover;
     margin: 5px;
     border-radius: 25px 0px 0px 25px;
@@ -315,14 +322,6 @@ aside {
 
 .populaires-div-text h4 {
     margin-bottom: 5px;
-}
-
-.populaires-div-text i {
-    color: #0065fc;
-}
-
-.populaires-div-text i + i + i + i + i {
-    color: white;
 }
 
 #activités {
@@ -421,12 +420,16 @@ footer div {
     }
 
     .populaires-div {
-        height: 150px;
+        height: 100%;
         width: 30%;
     }
 
     .populaires-img {
-        width: 50%;
+        width:70%;
+    }
+
+    .populaires-div img {
+        width: 100%;
     }
 
     .activités-div {
@@ -540,6 +543,10 @@ footer div {
     .barre-filtre  {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .flex-filtre {
+        flex-wrap: wrap;
     }
 
     h2 {
