@@ -295,7 +295,6 @@ aside {
 .populaires-div div {
     display: flex;
     flex-direction: column;
-    
 }
 
 .populaires-img {
@@ -656,10 +655,6 @@ footer div {
     .hébergement-div img {
         width: 99%;
         height: 300px;
-    }
-    
-    #hébergement a {
-        display: none;   
     }
 
     .activités-flex {
