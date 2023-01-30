@@ -5,6 +5,8 @@
 
 body {
     font-family: raleway, Arial, Helvetica, sans-serif;
+    max-width: 1400px;
+    margin: auto;
 }
 
 header {
@@ -169,6 +171,7 @@ input[type="search"] {
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 .icone-info {
@@ -177,10 +180,11 @@ input[type="search"] {
     padding: 10px;
     border:  solid 1px rgba(128, 128, 128, 0.562);
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -214,6 +218,7 @@ input[type="search"] {
 }
 
 .hébergement-div {
+    display: block;
     width: 32%;
     margin-bottom: 30px;
     height: 50%;
@@ -283,6 +288,8 @@ aside {
     margin-bottom: 30px;
     height: 30%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.185) ;
+    text-decoration: none;
+    color: black;
 }
 
 .populaires-div div {
@@ -339,6 +346,8 @@ aside {
 .activités-div {
     width: 23%;
     height: 430px;
+    text-decoration: none;
+    color: black;
 }
 
 .activités-div h5 {
@@ -462,7 +471,7 @@ footer div {
         color: #0065fc;
     }
 
-    h1, h1 + p, h2, .barre-de-recherche , .barre-filtre, .p-info, #hebergement, h3, .activités-div {
+    h1, h1 + p, h2, .barre-de-recherche, .p-info, #hebergement, h3, .activités-div {
         margin-left: 30px;
     }
 
@@ -577,7 +586,6 @@ footer div {
     }
 
     .p-info i {
-        font-size: 2em;
         margin-right: 20px;
     }
 
