@@ -289,6 +289,11 @@ aside {
     color: #0065fc;
 }
 
+.populaires-flex a {
+    text-decoration: none;
+    color: black;
+}
+
 .populaires-div {
     background-color: white;
     display: flex;
@@ -296,8 +301,6 @@ aside {
     margin-bottom: 30px;
     height: 30%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.185) ;
-    text-decoration: none;
-    color: black;
 }
 
 .populaires-div div {
